@@ -149,7 +149,7 @@ while (1)
       $status = $knx->connection->EIBOpenVBusmonitorText();
    }
 
-   if (file_exists('./reboot') || $_GET['onetime'])
+   if (file_exists('./reboot') || IsSet($_GET['onetime']))
    {
       $knx->disconnect();
       $knx_data->disconnect();
