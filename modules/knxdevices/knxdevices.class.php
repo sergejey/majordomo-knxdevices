@@ -482,7 +482,7 @@ function propertySetHandle($object, $property, $value) {
 *
 * @access private
 */
- function dbInstall() {
+ function dbInstall($data) {
 /*
 knxdevices - Knx Devices
 knxproperties - Knx Properties
