@@ -163,7 +163,7 @@ function admin(&$out) {
    $old_status=$this->config['API_ENABLE'];
    $this->config['API_ENABLE']=(int)$api_enable;
    if ($this->config['API_ENABLE']!=$old_status) {
-    SaveFile(ROOT.'reboot');
+    SaveFile(ROOT.'reboot', "");
    }
    $this->saveConfig();
    $this->redirect("?");
